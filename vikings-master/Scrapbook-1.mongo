@@ -1,0 +1,25 @@
+/**
+Tips for executing commands
+
+Execute one line
+  CMD ""
+
+Excute all
+  CMD :
+
+ */
+
+db.heroes.count()
+
+db.heroes.find()
+
+db.heroes.findOne({name: 'Bjorn Ironside'})
+
+// db.heroes.findOneAndUpdate(
+//     { id: 5 },
+//     { $set: {id: 5, name: 'Aslaug', description: 'Warrior queen'}} },
+//     { upsert: true, new: true }
+// )
+
+
+// db.heroes.findOneAndDelete({id: 7})

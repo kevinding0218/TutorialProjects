@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+  awesome-angular-workshop:
+    image: awesome-angular-workshop
+    build: .
+    environment:
+      NODE_ENV: development
+      WWW: ./www
+    ports:
+      - 9070:9070
+      - 9229:9229
+    ## set your startup file here
+    # command: node --inspect server.js
+    command: node --inspect=0.0.0.0:9229 server.js
